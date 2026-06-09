@@ -35,8 +35,6 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   cursor: crosshair;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 /* ── SCANLINE OVERLAY ── */
@@ -267,7 +265,9 @@ nav::before {
 .cart-items {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem;
+  min-height: 0;
 }
 
 .cart-empty {
@@ -963,7 +963,7 @@ nav::before {
 }
 
 .field-report::before {
-  content: 'CLASSIFIED';
+  content: 'STOMPGUARD';
   position: absolute;
   right: -3rem;
   top: 50%;
@@ -1192,7 +1192,7 @@ nav::before {
 }
 
 .mission-banner::before {
-  content: 'MISSION CRITICAL';
+  content: 'STOMPGUARD';
   position: absolute;
   left: -2rem;
   top: 50%;
@@ -1384,15 +1384,15 @@ footer {
     <img src="https://stompguard.com/cdn/shop/files/80403f2c-il_fullxfull.7627642180_7w3a.jpg?v=1773128059&width=1200" alt="StompGuard on stage" class="hero-left-img"/>
     <div class="hero-left-overlay"></div>
     <div class="hero-left-content">
-      <div class="hero-eyebrow">Field-Grade Pedal Protection</div>
+      <div class="hero-eyebrow">Premium Pedal Protection</div>
       <h1 class="hero-title">
         <span class="line-chrome">Protect</span>
         <span class="line-solid">Your</span>
         <span class="line-red">Signal.</span>
       </h1>
       <div class="hero-spec">
-        <strong>MISSION BRIEF</strong>
-        Precision-cut acrylic protectors for your most valuable gear. Engineered for gigging musicians who operate in hostile environments.
+        <strong>WHAT IT DOES</strong>
+        Precision-cut acrylic protectors for your most valuable gear. Engineered for gigging musicians who protect their gear on stage and in the studio.
       </div>
       <div class="hero-ctas">
         <a href="#products" class="btn-deploy">Shop Now →</a>
@@ -1403,12 +1403,12 @@ footer {
 
   <div class="hero-right">
     <div class="hero-product">
-      <div class="hero-product-badge">Field Tested</div>
+      <div class="hero-product-badge">Best Seller</div>
       <div class="hero-product-img">
         <img src="https://stompguard.com/cdn/shop/files/80403f2c-il_fullxfull.7627642180_7w3a.jpg?v=1773128059&width=600" alt="StompGuard product"/>
       </div>
       <div class="hero-product-info">
-        <div class="hero-product-label">Unit Designation</div>
+        <div class="hero-product-label">Product</div>
         <div class="hero-product-name">Quad Cortex StompGuard Acrylic Protector w/ Screen Shield</div>
         <div class="hero-product-price"><span>MSRP</span>$49.99</div>
       </div>
@@ -1438,7 +1438,7 @@ footer {
 <section class="section products-section">
   <div class="products-header">
     <div>
-      <div class="section-eyebrow">Equipment Catalog</div>
+      <div class="section-eyebrow">Product Catalog</div>
       <h2 class="section-title">Protective<br/>Covers</h2>
     </div>
     <a href="#" class="view-all">View All Units →</a>
@@ -1448,10 +1448,10 @@ footer {
     <div class="product-card">
       <div class="product-card-img">
         <img src="https://stompguard.com/cdn/shop/files/26dd5755-il_fullxfull.7636746092_1utv.jpg?v=1773128060&width=500" alt="Quad Cortex Mini"/>
-        <div class="product-card-badge">New Unit</div>
+        <div class="product-card-badge">New</div>
       </div>
       <div class="product-card-body">
-        <div class="product-card-unit">Unit-002</div>
+        <div class="product-card-unit">QC-002</div>
         <div class="product-card-name">Quad Cortex Mini StompGuard w/ Screen Shield</div>
         <div class="product-card-footer">
           <span class="product-card-price">$34.95</span>
@@ -1463,10 +1463,10 @@ footer {
     <div class="product-card">
       <div class="product-card-img">
         <img src="https://stompguard.com/cdn/shop/files/62eaf802-il_fullxfull.7575364814_alzo.jpg?v=1773128059&width=500" alt="Quad Cortex Full"/>
-        <div class="product-card-badge">Field Tested</div>
+        <div class="product-card-badge">Best Seller</div>
       </div>
       <div class="product-card-body">
-        <div class="product-card-unit">Unit-001</div>
+        <div class="product-card-unit">QC-001</div>
         <div class="product-card-name">Quad Cortex StompGuard w/ Screen Protection</div>
         <div class="product-card-footer">
           <span class="product-card-price">$49.99</span>
@@ -1480,7 +1480,7 @@ footer {
         <img src="https://stompguard.com/cdn/shop/files/d9c0fafb-il_fullxfull.6924149105_frep.jpg?v=1773128059&width=500" alt="Nano Cortex"/>
       </div>
       <div class="product-card-body">
-        <div class="product-card-unit">Unit-003</div>
+        <div class="product-card-unit">QC-003</div>
         <div class="product-card-name">Neural DSP Nano Cortex StompGuard Acrylic Protector</div>
         <div class="product-card-footer">
           <span class="product-card-price">$21.95</span>
@@ -1494,7 +1494,7 @@ footer {
         <img src="https://stompguard.com/cdn/shop/files/23f2648e-il_fullxfull.6876203484_mk9h.jpg?v=1773128060&width=500" alt="Digitech Drop"/>
       </div>
       <div class="product-card-body">
-        <div class="product-card-unit">Unit-004</div>
+        <div class="product-card-unit">QC-004</div>
         <div class="product-card-name">Digitech Drop StompGuard Acrylic Protector</div>
         <div class="product-card-footer">
           <span class="product-card-price">$21.95</span>
@@ -1509,7 +1509,7 @@ footer {
 <section class="section field-report">
   <div class="field-layout">
     <div>
-      <div class="section-eyebrow">Field Report</div>
+      <div class="section-eyebrow">Why StompGuard</div>
       <h2 class="section-title">Built for<br/>Serious<br/>Players</h2>
       <p style="font-family:var(--font-mono);font-size:0.78rem;color:var(--muted);line-height:1.8;max-width:460px;letter-spacing:0.03em;">
         Your pedalboard is mission-critical equipment. StompGuard protectors are precision-manufactured to keep your gear operational through knocks, liquid, and the chaos of live performance.
@@ -1553,8 +1553,8 @@ footer {
 <!-- INTEL (REVIEWS) -->
 <section class="intel-section">
   <div class="intel-header">
-    <div class="section-eyebrow" style="justify-content:center;">Field Intel</div>
-    <h2 class="section-title">Operator<br/>Reports</h2>
+    <div class="section-eyebrow" style="justify-content:center;">Customer Reviews</div>
+    <h2 class="section-title">What Players<br/>Are Saying</h2>
   </div>
   <div class="intel-grid">
     <div class="intel-card">
@@ -1596,8 +1596,8 @@ footer {
 <!-- MISSION BANNER -->
 <section class="mission-banner">
   <div class="mission-text">
-    <h2 class="mission-title">Gear Down.<br/>Protect Up.</h2>
-    <p class="mission-sub">One accidental stomp can take your rig offline mid-performance. Don't risk the mission.</p>
+    <h2 class="mission-title">Your Gear Deserves<br/>Protection.</h2>
+    <p class="mission-sub">One accident can take your rig offline for good. Don't let it happen.</p>
   </div>
   <a href="#products" class="btn-mission">Shop Protectors →</a>
 </section>
@@ -1642,7 +1642,7 @@ footer {
   </div>
   <div class="footer-bottom">
     <span>© 2025 StompGuard. All rights reserved.</span>
-    <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted);opacity:0.4;">SG-TACTICAL-v2.0</span>
+    <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted);opacity:0.4;">SG-v2.0</span>
   </div>
 </footer>
 
